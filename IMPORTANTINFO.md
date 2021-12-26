@@ -1,4 +1,4 @@
 # Motor_Bike_Racers
 This is a **beginner's attempt** at making an extremely simple "coin-flip" style racing program for fun. 
 A lot of the base code was taken from a project I made in an online "Intro to Java Programming" course that I'm taking, but much of it is changed/edited/refactored. Essentially, the program creates 2 motorbike objects (Ducati + Honda), and (hopefully eventually when I figure out how to do so) generates random integer values (speed) for both of them over the course of a 3 part race (starting portion, increase portion, and decrease portion). The program then determines which of the 2 bikes had the higher speed value at the end, and declares that bike the winner (this is the intent, but currently it does not do that, at least not in the correct way). 
-\n*Another note: I also don't know how Github works just yet, so I may have organized the classes incorrectly. I hope it's at least legible and can be understood.
+*Another note: I also don't know how Github works just yet, so I may have organized the classes incorrectly. I hope it's at least legible and can be understood.
