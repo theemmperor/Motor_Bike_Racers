@@ -1,0 +1,33 @@
+package introduction.oop;
+
+public class MotorBikeRunner {
+
+	public static void main(String[] args) {
+		MotorBike ducati = new MotorBike();
+		MotorBike honda = new MotorBike();
+		MotorBike ender = new MotorBike();
+
+		ducati.startDucati();
+		honda.startHonda();
+
+		ducati.setDucatiSpeed(100);
+		honda.setHondaSpeed(100);
+		System.out.println(ducati.getSpeedDucati());
+		System.out.println(honda.getSpeedHonda());
+
+		ducati.increaseDucatiSpeed(100);
+		honda.increaseHondaSpeed(100);
+		System.out.println(ducati.getSpeedDucati());
+		System.out.println(honda.getSpeedHonda());
+
+		ducati.ducatiDecreaseSpeed(40);
+		honda.hondaDecreaseSpeed(35);
+		System.out.println(ducati.getSpeedDucati());
+		System.out.println(honda.getSpeedHonda());
+
+		ducati.end();
+		honda.end();
+		ender.end();
+	}
+
+}
