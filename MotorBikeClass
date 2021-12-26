@@ -1,0 +1,87 @@
+package introduction.oop;
+
+public class MotorBike {
+
+	// state
+	private int speed; // member variable
+
+	public int ducatiSpeed; // declares integer variables for both bikes
+	public int hondaSpeed;
+
+	public int getSpeedDucati() { //
+		return ducatiSpeed;
+
+	}
+
+	public int getSpeedHonda() {
+		return hondaSpeed;
+	}
+
+//defines method setDucatiSpeed. Takes in the value for integer variable speed, and if speed is above 0, 
+//ducatiSpeed becomes equal to the value for speed
+	public void setDucatiSpeed(int speed) {
+		if (speed > 0)
+			ducatiSpeed = speed;
+	}
+
+	public void setHondaSpeed(int speed) {
+		if (speed > 0)
+			hondaSpeed = speed;
+	}
+
+//defines method increaseSpeed. Takes in the value for howMuch variable, then adds howMuch onto this.speed.
+	public void increaseDucatiSpeed(int howMuch) {
+		ducatiSpeed = ducatiSpeed + howMuch;
+
+	}
+
+	public void increaseHondaSpeed(int howMuch) {
+		hondaSpeed = hondaSpeed + howMuch;
+
+	}
+
+//defines ducatiDecreaseSpeed. Takes in howMuch variable, subtracts it from this.speed, and if the value ends up below zero, 
+//alerts the user and reverts the value to zero.  
+	public void ducatiDecreaseSpeed(int howMuch) {
+		ducatiSpeed = ducatiSpeed - howMuch;
+		if (ducatiSpeed < 0)
+			System.out.println("Ducati Is Too Slow!");
+		if (ducatiSpeed < 0)
+			ducatiSpeed = 0;
+
+	}
+
+//same as ducatiDecreaseSpeed, just for honda bike instead of ducati. 
+	public void hondaDecreaseSpeed(int howMuch) {
+		hondaSpeed = hondaSpeed - howMuch;
+		if (hondaSpeed < 0)
+			System.out.println("Honda Is Too Slow!");
+		if (hondaSpeed < 0)
+			hondaSpeed = 0;
+
+	}
+
+//starts the ducati bike
+	void startDucati() {
+		System.out.println("Ducati is revved!");
+	}
+
+//starts honda bike
+	void startHonda() {
+		System.out.println("Honda is revved!");
+	}
+
+//defines method end which defines outcomes depending on the victor of the race. 
+//end method changes its output depending on what object calls it. 
+	void end() {
+		if (ducatiSpeed > hondaSpeed) {
+		System.out.println("Ducati Wins!");
+		}
+		if (hondaSpeed > ducatiSpeed) {
+		System.out.println("Honda Wins!");
+		}
+		if (ducatiSpeed == hondaSpeed) {
+		System.out.println("No one wins!");
+		}
+	}
+}
